@@ -1,104 +1,83 @@
 <!DOCTYPE html>
 <html>
-<style>
-    
-    form {
-        border: 3px solid #f7f7f7;
-        padding: 50px;
-        margin: 50px;
-    }
-
-
-
-    input[type=text],
-    input[type=number] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-    
-  
-
-    button {
-        background-color: #121212;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-    }
-
+<head>
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
    
-
-    button:hover {
-        opacity: 0.8;
-    }
-    .time{
-        margin-top: 50px;
-    }
-
-
-    .container {
-        padding: 5px;
-    }
-
+     <!-------------------------------------------------CSS File----------------------------------------------------------->
+    <link href="style.css" type="text/css" rel="stylesheet">
    
-
-    span.psw {
-        float: right;
-        padding-top: 16px;
-    }
-
+    <link rel="stylesheet" href="sidebar.css">
    
+  <!-------------------------------------------------Viewport File----------------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <link rel="stylesheet" href="sidebar.css">
 
-    @media screen and (max-width: 300px) {
-         {
-            display: block;
-            float: none;
-        }
-
-        .cancelbtn {
-            width: 100%;
-        }
-    }
-</style>
-
+ 
+</head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <div class="sidebar">
+       
+        <a href="table.html">Dashboard</a><br>
+        <a class="active" href="Form.html"> Form</a>
+    </div>
+   
 
-    
-    <form>
+    <h1 class="heading text-center">
+        Quality Assurance Report
+    </h1>
+   <p class="text-center">
 
-        <div class="container">
-            <label><b>Vegitables Name:</b></label>
-            <input type="text" placeholder="Vegitables Name" name="uname" required>
-            
-            <label><b>Quantity</b></label>
-            <input type="text" placeholder="Quantity" name="uname" required>
-            <label><b>Product Id number</b></label>
-            
-            <input type="text" placeholder="Product Id number" name="uname" required>
-            
-            <label><b>Farmer Namer</b></label>
-            <input type="text" placeholder="Farmer Namer" name="uname" required>
-            
-            <label><b>Purchase</b></label>
-            <input type="text" placeholder="Purchase" name="uname" required>
-            <label><b>Mobile Number</b></label>
-            <input type="number" placeholder="Mobile Number" name="psw" required>
-            
-            <label class="time"><b>Crop Time</b></label>
-            <input type="Time"  name="time" required>
+    Please complete this form honestly and to be the best of your  ability.The result from this form will be used to improve customer experience,and ensure we provide our client with high-quality experience.
+   </p>
+     
+<form class="row">
+   
+    <div class="col-md-6 " >
+       
+        <label for= "VegetablesNames" class="form-label">Vegetables Name</label>
+        <input type="text" class="form-control" name="uname" required>
+    </div>
+   
+    <div class="col-md-6">        
+            <label for="Quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" name="uname" required>
+          </div>
+    <div class="col-md-6">
+            <label for="product Id number" class="form-label">Product Id number</label>
+            <input type="number" class="form-control" name="uname" required>
+    </div>      
+    <div class="col-md-6">      
+            <label for="FarmerName" class="form-label">Farmer Namer</label>
+            <input type="text" class="form-control" name="uname" required>
+    </div>
+    <div class="col-md-6">      
+   
+            <label for="Purchase" class="form-label">Purchase</label>
+            <input type="text" class="form-control" name="uname" required>
+    </div>
+    <div class="col-md-6">      
 
-            <button type="submit">Login</button>
+            <label for="MobileNumber" class="form-label">Mobile Number</label>
+            <input type="number" class="form-control" name="psw" required>
+    </div>
+   
+    <div class="col-md-6">      
 
+            <label for="CropTime" class="time">Crop Time</label>
+            <input type="Time" class="form-control"  name="time" required>
 
+           
+        </div>
+ 
+     <div class="submitButton">  
+         <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 
-    </form>
-
+</form>
 </body>
-
 </html>

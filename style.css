@@ -1,0 +1,99 @@
+body
+{
+    background-color: #f2f2f2;
+    margin: px 20px 30px 20px;
+}
+
+form
+{
+       
+        padding: 50px;
+        margin-left: 25%;
+        margin-right: 25%
+}
+
+
+input[type=text],
+input[type=number]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Paragraph alignment for responsive*/
+p
+{
+    margin-left: 200px;
+    text-align: center;
+    font-size: 18px;
+    padding: auto;
+}
+
+h1
+{
+ text-align: center;
+}
+
+
+button
+{
+    background-color: #121212;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+   
+}
+
+
+
+
+button:hover
+{
+    opacity: 0.8;
+}
+
+.time
+{
+    margin-top: 10px;
+}
+
+
+.row
+{
+     margin-left: 150px;
+    padding-left:0px 100px 0 100px;
+    display: flex;
+    width: 100%;
+   
+}
+
+.main
+{
+
+border: solid 5px white !important;
+border-bottom-style:solid ;
+
+}
+
+
+
+
+@media screen and (max-width: 300px)
+{
+    display : block;
+    float : none;
+   
+   
+}
+
+
+
